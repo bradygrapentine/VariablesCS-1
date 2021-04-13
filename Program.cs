@@ -8,13 +8,18 @@ namespace VariablesCS
         {
             var numberOfCupsOfCoffee = 3;
             var fullName = "Brady Steven Grapentine";
-            var today = "04/13/2021";
-            Console.WriteLine(numberOfCupsOfCoffee + ", " + fullName + ", " + today);
-
-            Console.Write("What is your name? ");
+            var today = DateTime.Now;
+            Console.WriteLine(numberOfCupsOfCoffee + ", " + fullName + ", " + today.ToString("d"));
+            Console.Write("What is your first name? ");
             var name = Console.ReadLine();
-            Console.WriteLine($"It's nice to meet you, {name}!");
-
+            if (name == "Alice")
+            {
+                Console.WriteLine($"Listen {name}, strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.");
+            }
+            else
+            {
+                Console.WriteLine($"It's nice to meet you, {name}!");
+            }
             Console.Write("Enter a number: ");
             var firstNumberAsString = Console.ReadLine();
             Console.Write("Enter another number: ");
