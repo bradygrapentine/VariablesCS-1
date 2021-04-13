@@ -4,10 +4,10 @@ namespace VariablesCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void VariableMethods()
         {
-            var numberOfCupsOfCoffee = 3;
-            var fullName = "Brady Steven Grapentine";
+            double numberOfCupsOfCoffee = 3;
+            string fullName = "Brady Steven Grapentine";
             var today = DateTime.Now;
             Console.WriteLine(numberOfCupsOfCoffee + ", " + fullName + ", " + today.ToString("d"));
             Console.Write("What is your first name? ");
@@ -39,6 +39,11 @@ namespace VariablesCS
             Console.WriteLine($"If you divide {firstOperand} by {secondOperand} you get {quotient}!");
             Console.WriteLine($"If you multiply {firstOperand} by {secondOperand} you get {product}!");
             Console.WriteLine($"The remainder after {firstOperand} is divided by {secondOperand} is {remainder}!");
+        }
+
+        static void Main(string[] args)
+        {
+            VariableMethods();
         }
     }
 }
